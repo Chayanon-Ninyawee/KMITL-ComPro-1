@@ -3,20 +3,20 @@
 #define NUMBER_OF_STUDENTS 5
 
 int main(int argc, char *argv[]) {
-    int studentsMark[NUMBER_OF_STUDENTS];
+    int studentMarks[NUMBER_OF_STUDENTS];
 
     for (int i = 0; i < NUMBER_OF_STUDENTS; i++) {
         printf("Enter the marks of student %d: ", i + 1);
-        scanf("%d", &studentsMark[i]);
+        scanf("%d", &studentMarks[i]);
     }
 
     int totalMark = 0;
     int highestMark = -INT_MAX;
     for (int i = 0; i < NUMBER_OF_STUDENTS; i++) {
-        totalMark += studentsMark[i];
+        totalMark += studentMarks[i];
 
-        if (highestMark < studentsMark[i]) {
-            highestMark = studentsMark[i];
+        if (highestMark < studentMarks[i]) {
+            highestMark = studentMarks[i];
         }
     }
 

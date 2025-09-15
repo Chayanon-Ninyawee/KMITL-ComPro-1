@@ -27,7 +27,7 @@ int main() {
 
     printf("Sorted: ");
     for (int i = 0; i < NUMBER_OF_INTEGER; i++) {
-        printf("%d ", nums[i]);
+        printf("%d ", *(nums + i));
     }
     printf("\n");
 
