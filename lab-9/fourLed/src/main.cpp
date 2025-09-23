@@ -25,10 +25,16 @@ void loop() {
     if (potentiometerValue <= 256) {
         digitalWrite(LED_PINS[0], HIGH);
     } else if (potentiometerValue <= 512) {
+        digitalWrite(LED_PINS[0], HIGH);
         digitalWrite(LED_PINS[1], HIGH);
     } else if (potentiometerValue <= 768) {
+        digitalWrite(LED_PINS[0], HIGH);
+        digitalWrite(LED_PINS[1], HIGH);
         digitalWrite(LED_PINS[2], HIGH);
     } else {
+        digitalWrite(LED_PINS[0], HIGH);
+        digitalWrite(LED_PINS[1], HIGH);
+        digitalWrite(LED_PINS[2], HIGH);
         digitalWrite(LED_PINS[3], HIGH);
     }
 }
